@@ -1,0 +1,5 @@
+edge-tts>=6.1.12
+pillow>=10.2.0
+pygments>=2.17.2
+google-api-python-client>=2.120.0
+google-auth-oauthlib>=1.2.0

@@ -1,0 +1,21 @@
+TITLE: Stop Writing Redundant Checks in Python
+HEADLINE: Python := Walrus Operator
+TAGS: python, tips, walrus operator
+LANG: python
+FILE: main.py
+
+=== CODE ===
+# Without walrus
+data = fetch_data()
+if data:
+    process(data)
+
+# With walrus :=
+if (data := fetch_data()):
+    process(data)
+
+=== VOICE ===
+Stop writing redundant assignment statements in Python.
+[lines 2-4] Look at this standard code: we fetch data first, then check it on the next line.
+[lines 6-8] Instead, use the Walrus operator to assign and check the condition at the same time.
+[all] Cleaner logic and zero duplicate lookups.
